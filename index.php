@@ -2,9 +2,11 @@
 
 require_once 'Car.php';
 require_once 'Bicycle.php';
+require_once 'Camion.php';
 
-$car = new Car('red', 4 , 'nuclear');
-$bike = new Bicycle();
+$car = new Car('red', 4 , 'electric');
+$bike = new Bicycle('green',1);
+$truck = new Camion(10, 'blue',6,'fuel');
 
 // Moving bike
 echo $bike->forward();
@@ -16,8 +18,15 @@ echo '<br>';
 echo '<br>';
 // Moving car
 echo $car->forward();
-echo '<br> Vitesse du de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo '<br> Vitesse de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
-echo '<br> Vitesse du de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo '<br> Vitesse de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
-//var_dump($car);
+
+echo '<br>';
+echo '<br>';
+echo $truck->forward();
+echo '<br> Vitesse du camion : ' . $truck->getCurrentSpeed() . ' km/h' . '<br>';
+echo $truck->brake();
+echo '<br> Vitesse du camion : ' . $truck->getCurrentSpeed() . ' km/h' . '<br>';
+echo $truck->brake();
