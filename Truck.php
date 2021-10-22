@@ -2,7 +2,7 @@
 
 require_once 'Vehicle.php';
 
-class Camion extends Vehicle
+class Truck extends Vehicle
 {
     private int $capacity;
     private int $loading = 0;
