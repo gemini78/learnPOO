@@ -18,9 +18,9 @@ echo '<br>';
 echo '<br>';
 // Moving car
 echo $car->forward();
-echo '<br> Vitesse de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
-echo '<br> Vitesse de le voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
 echo $car->brake();
 
 echo '<br>';
@@ -30,3 +30,4 @@ echo '<br> Vitesse du camion : ' . $truck->getCurrentSpeed() . ' km/h' . '<br>';
 echo $truck->brake();
 echo '<br> Vitesse du camion : ' . $truck->getCurrentSpeed() . ' km/h' . '<br>';
 echo $truck->brake();
+echo '<br> Statut du chargement du camion : ' . $truck->isFull() . ' ...';

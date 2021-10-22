@@ -12,6 +12,7 @@ class Camion extends Vehicle
     {
         parent::__construct($color, $nbSeats);
         $this->setEnergy($energy);
+        $this->setCapacity($capacity);
     }
 
     public function getCapacity()
