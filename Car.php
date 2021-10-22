@@ -41,5 +41,10 @@ class Car extends Vehicle
     {
         $this->energyLevel = $energyLevel;
     }
-    
+
+    public function show()
+    {
+        echo '[ color: '. $this->getColor() . ' nb de place: '. $this->getNbSeats() . ' energie: '. $this->getEnergy() .' ]';
+    }
+        
 }
