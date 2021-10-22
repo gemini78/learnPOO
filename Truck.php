@@ -46,4 +46,16 @@ class Truck extends Vehicle
         }
         return 'in filling';
     }
+    
+    public function getLoading()
+    {
+        return $this->loading;
+    }
+    
+    public function setLoading($loading)
+    {
+        $this->loading = $loading;
+
+        return $this;
+    }
 }
